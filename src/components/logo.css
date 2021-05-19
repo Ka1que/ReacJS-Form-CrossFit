@@ -1,0 +1,26 @@
+.imgLogo{
+  width: 48px;
+  display:inline;
+}
+
+.txtLogo{
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-left: 16px;
+  font-weight: 400;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 8%;
+  top: 32px;
+}
+
+.bold{
+  font-weight: 700;
+  font-size: 18px;
+  display: inline;
+}
