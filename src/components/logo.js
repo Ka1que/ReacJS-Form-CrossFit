@@ -8,7 +8,7 @@ export default class App extends React.Component {
 
       <div className='logo'>
         <img className='imgLogo' alt="problemas em carregar a imagem desculpa o inconveniente" src={ img } />
-        <h1 className='txtLogo'> CrossFAT <br />do <b className="bold">Danilinho</b> </h1>
+        <h1 className='txtLogo'> CrossFIT <br />do <b className="bold">Bairro</b> </h1>
       </div>
 
     );
