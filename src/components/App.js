@@ -4,26 +4,12 @@ import Logo from './logo';
 import Mensagem from './mensagem';
 import Input from './input';
 import InputPassword from './inputPassword';
-import imgChurrasco from '../img/churrasco_img.png'
+import imgChurrasco from '../img/banner.png';
 
 export default class App extends React.Component {
-/*
-  constructor(props){
-    super(props);
-
-      this.state = {
-        form:{
-          email:'',
-          senha:''
-        }
-      }
-
-  }*/
 
   handleSubmit(e){
     e.preventDefault();
-
-    console.log('email: ',e.target[0].value," senha: ",e.target[1].value);
   
     let email = e.target[0].value;
     let senha = e.target[1].value;
@@ -49,12 +35,11 @@ export default class App extends React.Component {
     }
 
     if( email.indexOf("@") < 0){
-      txtHelperEmail.innerHTML = "sem @ não dá né mano";/*Por favor insira um email válido*/
+      txtHelperEmail.innerHTML = "Por favor insira um email válido";/*Por favor insira um email válido.  sem @ não dá né mano*/
       txtHelperEmail.removeAttribute('hidden');
       inpEmail.style.color= "red";
       inpEmail.style.borderColor= "red";
       floatLabel.style.top= "48%";
-      alert('did it')
       return;
     }else{
       inpEmail.removeAttribute('style');
@@ -79,7 +64,7 @@ export default class App extends React.Component {
       txtHelperSenha.setAttribute('hidden','');
     }
 
-    alert('tá na mão meu consagrado Vlw pelo cadastro 👍')
+    alert('cadastro aceito');
   }
 
   render(){
