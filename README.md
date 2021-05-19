@@ -1,7 +1,8 @@
 # olá 👋
 Para você que caiu de paraquedas nesse projeto<br />
 este projeto foi feito por mim [Kaique](https://www.linkedin.com/in/kaique-de-godoy-silva-31b48118b)<br />
-com o objetivo de aprender e treinar um pouco ReactJS<br />
+com o objetivo de aprender e treinar um pouco ReactJS <br />
+(não está concluido mas planejo fazer algumas melhorias)
 
 ## Layout
 Eu peguei um layout pronto <br />
