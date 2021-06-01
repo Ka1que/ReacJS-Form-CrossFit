@@ -12,6 +12,6 @@ desenhado por [Vitor](https://www.linkedin.com/in/vitor-fernandes-góes-74586977
 e o transformei em um site utilizando react<br /> 
 clicke no link abaixo e de uma conferida nele de forma online.
 
-<a href="https://reac-js-form-cross-fit.vercel.app/"> https://reac-js-form-cross-fit.vercel.app/ </a>
+<a href="https://bit.ly/3c9psz9"> https://bit.ly/3c9psz9 </a>
 
 # !!!lembrando que ele é apenas visual então não insira informações veridicas!!!
