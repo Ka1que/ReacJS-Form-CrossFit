@@ -3,8 +3,8 @@ import React from 'react';
 function App() {
 
   function HShow(e){
+    document.getElementById('eye').style.display = 'block';
     e.target.style.display = 'none';
-    document.getElementById('eye').style.display = 'initial';
     document.getElementById('inpSenha').setAttribute('type', 'password');
   }
 

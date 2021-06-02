@@ -1,26 +1,32 @@
-.imgLogo{
-  width: 48px;
-  display:inline;
+.imgLogo {
+    width: 48px;
+    display: inline;
 }
 
-.txtLogo{
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 5px;
-  margin-left: 16px;
-  font-weight: 400;
+.txtLogo {
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 16px;
+    font-weight: 400;
 }
 
-.logo{
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 8%;
-  top: 32px;
+.logo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 8%;
+    top: 32px;
 }
 
-.bold{
-  font-weight: 700;
-  font-size: 18px;
-  display: inline;
+.bold {
+    font-weight: 700;
+    font-size: 18px;
+    display: inline;
+}
+
+@media only screen and (max-width: 650px) {
+    .logo {
+        left: 33%;
+    }
 }

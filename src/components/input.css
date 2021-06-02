@@ -1,92 +1,166 @@
-#float-label {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  height: 10%;
-  position: absolute;
-  left: 8%;
-  margin-bottom: 30px;
-}
-.email{
-  top: 50%;
-}
+    #float-label {
+        display: flex;
+        flex-direction: column;
+        width: 27.5vw;
+        height: 09.77%;
+        position: absolute;
+        left: 8vw;
+        margin-bottom: 30px;
+        animation: surgindo 2s;
+    }
+    
+    .email {
+        top: 48%;
+    }
+    
+    .password {
+        top: 60.444444444%;
+    }
+    
+    #float-label input {
+        width: 100%;
+        height: 100%;
+        padding: 14px 12px 0px 1.6vw;
+        outline: 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background: #fff;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+    
+    #float-label label {
+        font-size: 16px;
+        padding: 0 12px 0 1.6vw;
+        color: #A49B9B;
+        pointer-events: none;
+        cursor: pointer;
+        position: absolute;
+        transform: translate(0, 32px) scale(1);
+        transform-origin: top left;
+        transition: all 0.2s ease-out;
+    }
+    
+    #float-label:focus-within label {
+        transform: translate(6px, 12px) scale(0.75);
+    }
+    
+    #float-label:focus-within input {
+        border-color: #2A0709;
+        transition: 0.8s;
+    }
+    
+    #float-label .Active {
+        transform: translate(6px, 12px) scale(0.75);
+    }
+    
+    #float-label:disabled {
+        color: #A49B9B;
+    }
+    
+    #txtHelperEmail {
+        height: 10%;
+        position: absolute;
+        left: 2%;
+        top: 80px;
+        font-size: 12px;
+        color: red;
+    }
+    
+    #txtHelperSenha {
+        height: 10%;
+        position: absolute;
+        left: 2%;
+        top: 80px;
+        font-size: 12px;
+        color: red;
+    }
+    
+    #eye {
+        position: absolute;
+        text-align: right;
+        top: 2em;
+        left: 95%;
+        cursor: pointer;
+    }
+    
+    #eyeUnview {
+        position: absolute;
+        text-align: right;
+        top: 2em;
+        left: 95%;
+        cursor: pointer;
+        display: none;
+    }
 
-.password {
-  top: 60%;
-}
+    @keyframes surgindo {
+        0% {
+            opacity: 0;
+            left:-20%;
+        }
 
-#float-label input {
-  width: 100%;
-  height: 56px;
-  padding: 14px 12px 0px 24px;
-  outline: 0;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background: #fff;
-  font-size: 16px;
-  border-radius: 8px;
-}
+        100%{
+            opacity: 1;
+            left: 8%;
+        }
+    }
+    
+    @media only screen and (max-height: 750px) {
+        .email {
+            top: 54%;
+        }
+        .password {
+            top: 68%;
+        }
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        #float-label label {
+            width: 86vw;
+        }
+        #float-label {
+            width: 82.77vw;
+        }
+        #eye {
+            left: 90%;
+        }
+        #eyeUnview {
+            left: 90%;
+        }
+    }
 
-#float-label label {
-  font-size: 16px;
-  padding: 0 12px 0 24px;
-  color: #A49B9B;
-  pointer-events: none;
-  cursor: pointer;
-  position: absolute;
-  transform: translate(0, 26px) scale(1);
-  transform-origin: top left;
-  transition: all 0.2s ease-out;
-}
+    @media only screen and (max-width: 767.98px){
+        #float-label label {
+            font-size: 16px;
+            padding: 0 12px 0 3.6vw;
+        }
+        #eye {
+            top: 1em;
+        }
+        #eyeUnview {
+            top: 1em;
+        }
 
-#float-label:focus-within label {
-  transform: translate(6px, 12px) scale(0.75);
-  
-}
- 
-#float-label:focus-within input{
-  border-color:  #2A0709;
-  transition: 0.8s;
-}
+    }
+    
+    @media only screen and (max-width: 450px) {
+        #float-label {
+            left: 6.6666%;
+        }
+    }
 
-#float-label .Active {
-  transform: translate(6px, 12px) scale(0.75);
-}
+    @media only screen and (max-height: 690px) {
 
-#float-label:disabled {
-  color: #A49B9B;
-}
+        #float-label label {
+            transform: translate(0, 16px) scale(1);
+        }
 
-#txtHelperEmail{
-  height: 10%;
-  position: absolute;
-  left: 2%;
-  top: 80px;
-  font-size: 12px;
-  color: red;
-}
-#txtHelperSenha{
-  height: 10%;
-  position: absolute;
-  left: 2%;
-  top: 80px;
-  font-size: 12px;
-  color: red;
-}
+        #eye {
+            top: 0.5em;
+        }
+        #eyeUnview {
+            top: 0.5em;
+        }
+    }
 
-#eye{
-  position: absolute;
-  text-align: right;
-  top: 20%;
-  left: 95%;
-  cursor: pointer;
-}
-
-#eyeUnview{
-  position: absolute;
-  text-align: right;
-  top: 20%;
-  left: 95%;
-  cursor: pointer;
-  display: none;
-}
+    

@@ -4,7 +4,8 @@
   font-weight: 400;
   position: absolute;
   left: 8%;
-  top: 32%;
+  top: 31.11111%;
+  animation: surgindo 1.5s;
 }
 
 .nomeUsu{

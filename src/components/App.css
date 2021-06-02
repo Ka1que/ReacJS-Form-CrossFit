@@ -1,52 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-  
-  * {
+* {
     margin: 0;
     padding: 0;
     background-size: 100%;
     font-family: 'Montserrat';
     font-size: small;
-  }
+}
 
-  .header{
+body{
+    overflow: hidden;
+}
+
+.header {
+    position: absolute;
+    top: 0%;
+    left: 0%;
     width: 100%;
     min-height: 114px;
     border-bottom: solid 1px #DEDEDE;
     display: flex;
-  }
+    animation: surgirHeader 2s;
+}
 
-  button{
-    width: 32.7%;
-    height: 7%;
+@keyframes surgirHeader {
+    0% {
+        opacity: 0;
+        top:-9%;
+    }
+
+    100%{
+        opacity: 1;
+        top: 0%;
+    }
+}
+
+button {
     position: absolute;
+    top: 74%;
     left: 8%;
+    height: 07.11111%;
+    width: 30vw;
+    color: white;
     background-color: #FF6B00;
     border-radius: 8px;
-    top: 74%;
-    border:none;
-    color: white;
+    border: none;
+    display: flex;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    animation: surgindo 2s;
     transition: 0.5s;
-  }
+}
 
-  button:hover{
+button:hover {
     background-color: #FF8F3E;
-  }
+}
 
-  button:active{
+button:active {
     background-color: #FF6B00;
-  }
+}
 
-  .imgBanner{
+.imgBanner {
     width: 100%;
     height: 100%;
     left: 0;
-  }
+}
 
-  .containerBanner{
-    width: 46%;
-    height: 100%;
+#loading{
+    animation: loading 1.5s cubic-bezier(.06,.6,.75,.13) infinite;
+    display: none;
+}
+
+@keyframes loading{
+    0% {transform: rotate(0deg);}
+    100%{transform: rotate(360deg)}
+} 
+
+.containerBanner {
+    width: 49vw;
+    top:0%;
     background-color: #0f0f0f;
     position: absolute;
-    left: 54%;
-  }
+    left: 51vw;
+    animation: surgindoBanner 2.25s;
+}
+
+@keyframes surgindoBanner {
+    0% {
+        left: 100%;
+        opacity: 0;
+    }
+
+    100%{
+        left: 51vw;
+        opacity: 1;
+    }
+}
+
+/* Ajustes do Responsivos */
+
+@media only screen and (max-width: 1000px) {
+    .imgBanner {
+        display: none;
+    }
+    .containerBanner {
+        display: none;
+    }
+    .logo {
+        left: 50%;
+    }
+    button {
+        width: 86.66vw; 
+        height: 10%;
+        top: 78.90625%;
+    }
+}
+
+@media only screen and (max-height: 750px){
+    button {
+        top: 85%;
+    }
+}
+
+@keyframes surgindo {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
