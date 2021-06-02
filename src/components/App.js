@@ -88,7 +88,7 @@ export default class App extends React.Component {
           <Input  />
           <InputPassword />
             
-          <button type="submit"> <p>Acessar conta</p> <img id="loading" src={Loading} /> </button>
+          <button type="submit"> <p>Acessar conta</p> <img id="loading" src={Loading} alt="problemas em carregar a imagem desculpa o inconveniente" /> </button>
           
         </form>
 

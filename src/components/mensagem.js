@@ -10,7 +10,7 @@ export default class App extends React.Component{
     return(
       <h1 className='txtBemVindo'> 
        Seja bem vindo<br />
-       de volta,<b className="nomeUsu"> {nomeUsu}</b> <img src={Wavehand} className='wavehand' /> 
+       de volta,<b className="nomeUsu"> {nomeUsu}</b> <img src={Wavehand} className='wavehand' alt="problemas em carregar a imagem desculpa o inconveniente" /> 
       </h1>
       )
   }
